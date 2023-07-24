@@ -1,5 +1,5 @@
 from flask import abort, render_template
-from pydaria.models import Product
+from template.models import Product
 
 
 def index():

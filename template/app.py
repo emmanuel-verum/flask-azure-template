@@ -1,6 +1,5 @@
 from flask import Flask
-
-from pydaria.ext import configuration
+from template.ext import configuration
 
 
 def minimal_app(**config):

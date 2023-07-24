@@ -1,8 +1,8 @@
 import pytest
 
-from pydaria.app import create_app, minimal_app
-from pydaria.ext.commands import populate_db
-from pydaria.ext.database import db
+from template.app import create_app, minimal_app
+from template.ext.commands import populate_db
+from template.ext.database import db
 
 
 @pytest.fixture(scope="session")

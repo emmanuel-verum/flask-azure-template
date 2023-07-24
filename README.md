@@ -1,4 +1,4 @@
-# Arquitetura Definitiva para Projetos Flask
+# Template desenvolvido com base na live Arquitetura Definitiva para Projetos Flask
 
 Tutorial em texto em: https://codeshow.com.br/arquitetura-web-python-flask/
 
@@ -7,27 +7,9 @@ Slides: http://bit.ly/codeshow-003-arquitetura-flask ou [googledrive](https://do
 
 Código parte da apresentação na https://pyjamas.live conference
 
----
-
-## Clone
-
-```bash
-git clone https://github.com/codeshow/003-arquitetura-flask.git
-```
-
-## ou faça o download
-
-https://github.com/codeshow/003-arquitetura-flask/archive/new.zip
-
-ou
-
-```bash
-wget https://github.com/codeshow/003-arquitetura-flask/archive/new.zip
-```
-
 ## Ambiente
 
-Python 3.6+
+Python 3.10+
 Ative a sua virtualenv
 
 ```bash
@@ -39,7 +21,7 @@ pip install -r requirements_test.txt
 ## Testando
 
 ```bash
-pytest pydaria/tests
+pytest template/tests
 ```
 
 ## Executando
@@ -68,7 +50,7 @@ Acesse:
 ```bash
 .
 ├── Makefile
-├── pydaria  (MAIN PACKAGE)
+├── template  (MAIN PACKAGE)
 │   ├── app.py  (APP FACTORIES)
 │   ├── blueprints  (BLUEPRINT FACTORIES)
 │   │   ├── __init__.py

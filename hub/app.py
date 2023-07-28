@@ -1,5 +1,5 @@
 from flask import Flask
-from template.ext import configuration
+from hub.ext import configuration
 
 
 def minimal_app(**config):

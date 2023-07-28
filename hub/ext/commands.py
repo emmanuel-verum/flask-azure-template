@@ -1,7 +1,7 @@
 import click
-from template.ext.database import db
-from template.ext.auth import create_user
-from template.models import Product
+from hub.ext.database import db
+from hub.ext.auth import create_user
+from hub.models import Projetos
 
 
 def create_db():
@@ -17,13 +17,13 @@ def drop_db():
 def populate_db():
     """Populate db with sample data"""
     data = [
-        Product(id=1, name="Product 1", price="10", description="Descrption 1"),
-        Product(id=2, name="Product 2", price="15", description="Descrption 1"),
-        Product(id=3, name="Product 3", price="20", description="Descrption 1"),
+        Projetos(id=1, nome="Onça Puma", ativo=True, descricao="Descrption 1"),
+        Projetos(id=2, nome="SudestCraft", ativo=True, descricao="Descrption 2"),
+        Projetos(id=3, nome="Projeto Teste", ativo=False, descricao="Descrption 3"),
     ]
     db.session.bulk_save_objects(data)
     db.session.commit()
-    return Product.query.all()
+    return Projetos.query.all()
 
 
 def init_app(app):

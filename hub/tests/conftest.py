@@ -1,8 +1,8 @@
 import pytest
 
-from template.app import create_app, minimal_app
-from template.ext.commands import populate_db
-from template.ext.database import db
+from hub.app import create_app, minimal_app
+from hub.ext.commands import populate_db
+from hub.ext.database import db
 
 
 @pytest.fixture(scope="session")
